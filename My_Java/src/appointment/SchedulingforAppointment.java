@@ -1,10 +1,11 @@
 package appointment;
 
 
+import java.util.Arrays;
 import java.util.List;
 
 public class SchedulingforAppointment {
-	public void schedule(DetailsforAppointment... appointments) {
+    public void schedule(DetailsforAppointment... appointments) {
         Arrays.stream(appointments).forEach(System.out::println);
     }
 
@@ -12,5 +13,5 @@ public class SchedulingforAppointment {
         System.out.println(description);
         appointments.stream().forEach(System.out::println);
     }
-
 }
+

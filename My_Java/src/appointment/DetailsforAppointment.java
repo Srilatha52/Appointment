@@ -2,8 +2,8 @@ package appointment;
 
 import java.time.LocalDate;
 
-final class DetailsforAppointment {
-	private final int appointmentId;
+public class DetailsforAppointment {
+    private final int appointmentId;
     private final Client client;
     private final LocalDate date;
     private final StatusforAppointment status;
@@ -21,25 +21,13 @@ final class DetailsforAppointment {
         return appointmentId;
     }
 
-    public Client getClient() {
-        return client;
-    }
-
-    public LocalDate getDate() {
-        return date;
-    }
-
     public StatusforAppointment getStatus() {
         return status;
     }
 
-    public Doctor getDoctor() {
-        return doctor;
-    }
-
     @Override
     public String toString() {
-        return "Appointment[ID=" + appointmentId + ", " + client + ", Date=" + date + ", Status=" + status + ", Doctor=" + doctor + "]";
+        return "Appointment[ID=" + appointmentId + ", Client=" + client + ", Date=" + date + ", Status=" + status + ", Doctor=" + doctor + "]";
     }
-
 }
+

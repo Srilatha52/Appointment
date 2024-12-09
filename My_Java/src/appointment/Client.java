@@ -1,11 +1,16 @@
 package appointment;
 
 class Client extends Person {
-	private int age;
+    private int age;
 
+    
     public Client(int id, String name, int age) {
         super(id, name);
         this.age = age;
+    }
+
+    public Client(int id, String name) {
+        this(id, name, 18); 
     }
 
     public int getAge() {
@@ -25,5 +30,4 @@ class Client extends Person {
     public String toString() {
         return "Client[ID=" + id + ", Name=" + name + ", Age=" + age + "]";
     }
-
 }
